@@ -120,7 +120,7 @@ mysqli_close($connect);
 <body>
     <div class="container">
         <form class="w-75" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off" enctype="multipart/form-data">
-            <h2>Sign Up.</h2>
+            <h2>Sign Up Now</h2>
             <hr />
             <?php
             if (isset($errMSG)) {
@@ -154,7 +154,8 @@ mysqli_close($connect);
             <hr />
             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
             <hr />
-            <a href="index.php">Sign in Here...</a>
+            <p> Already have an account ?</p>
+            <a href="index.php">Sign in Here ...</a>
         </form>
     </div>
 </body>
